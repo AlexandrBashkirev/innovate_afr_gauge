@@ -13,5 +13,7 @@ public class AppInstaller : ScriptableObjectInstaller<AppInstaller>
     {
         GameObject bluetoothConnector = GameObject.Instantiate(bluetoothConnectorPrefab);
         Container.Bind<IBluetoothConnector>().FromInstance(bluetoothConnector.GetComponent<BluetoothConnector>()).AsSingle();
+        
+        Container.Bind<IAfrController>().To<AfrController>().AsSingle();
     }
 }

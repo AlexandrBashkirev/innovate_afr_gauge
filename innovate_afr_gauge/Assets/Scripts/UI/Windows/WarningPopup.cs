@@ -4,6 +4,8 @@ using UnityEngine.UI;
 using UnityEngine;
 using System;
 
+
+[WinPathAttribute("Prefabs/Windows/WarningPopup")]
 public class WarningPopup : Window {
 
     public Text title;
@@ -14,14 +16,13 @@ public class WarningPopup : Window {
 
     public static WarningPopup push(string titleStr, string infoStr, string btnStr, Action action )
     {
-        WarningPopup wp = Instantiate((GameObject)Resources.Load("Prefabs/WarningPopup")).GetComponent<WarningPopup>();
+        WarningPopup wp = SceneManager.Instance.PushWin<WarningPopup>().GetComponent<WarningPopup>();
 
         wp.title.text = titleStr;
         wp.info.text = infoStr;
         wp.btnText.text = btnStr;
         wp.action = action;
-
-        SceneManager.instance.PushWin(wp);
+        
         return wp;
     }
 

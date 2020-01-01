@@ -31,10 +31,14 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 2a489aba2812b1b49998b59f9810a0b9, type: 3}
-    totalSpriteSurfaceArea: 0
+    totalSpriteSurfaceArea: 151182
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 13323cf6490e9854f9e21991eb0d83d6, type: 3}
+  - {fileID: 21300000, guid: cb8fa19dbca5efc428e068f32d564447, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - air_gauge
+  - main_gauge
   m_Tag: ui
   m_IsVariant: 0

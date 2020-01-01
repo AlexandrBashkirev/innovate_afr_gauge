@@ -186,6 +186,6 @@ public class Window : MonoBehaviour {
 
     public virtual void backClicked()
     {
-        SceneManager.instance.PullWin();
+        SceneManager.Instance.PullWin();
     }
 }

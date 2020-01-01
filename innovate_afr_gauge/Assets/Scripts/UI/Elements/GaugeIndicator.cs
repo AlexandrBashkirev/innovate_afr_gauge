@@ -1,18 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GaugeIndicator : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private RectTransform rt;
+    private void Awake()
     {
-        
+        rt = GetComponent<RectTransform>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetAngle(float angel)
     {
-        
+        rt.Rotate(Vector3.up, angel);
     }
 }

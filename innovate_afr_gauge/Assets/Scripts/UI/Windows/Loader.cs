@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
+
+[WinPathAttribute("Prefabs/Windows/LoaderWin")]
 public class Loader : Window {
 
     public Text text;
